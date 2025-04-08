@@ -8,6 +8,15 @@ const buttonName = [
   { name: "geology", text: "Surface Geology", mobileText: "SURFACE" },
 ] as const;
 
+interface Size {
+  mobileWidth: string;
+  mobileHeight: string;
+  tabletWidth: string;
+  tabletHeight: string;
+  laptopWidth: string;
+  laptopHeight: string;
+}
+
 interface Planet {
   name: string;
   overview: { content: string; source: string };
@@ -20,12 +29,9 @@ interface Planet {
   radius: string;
   temperature: string;
   sizes: {
-    mobileWidth: string;
-    mobileHeight: string;
-    tabletWidth: string;
-    tabletHeight: string;
-    laptopWidth: string;
-    laptopHeight: string;
+    planet: Size;
+    internal: Size;
+    geology: Size;
   };
 }
 
@@ -65,6 +71,19 @@ export default function Planet() {
 
   const domain = getDomain(planet?.[currentText]?.source);
 
+  const getImageSizeClasses = () => {
+    if (!planet) return "";
+
+    const view = viewToImageKey[currentText];
+    const size = planet.sizes[view];
+
+    return `
+      w-[${size.mobileWidth}] h-[${size.mobileHeight}]
+      md:w-[${size.tabletWidth}] md:h-[${size.tabletHeight}]
+      lg:w-[${size.laptopWidth}] lg:h-[${size.laptopHeight}]
+    `;
+  };
+
   return (
     <div>
       <nav className="flex">
@@ -93,7 +112,7 @@ export default function Planet() {
         <img
           src={planet?.images[viewToImageKey[currentText]]}
           alt={planet?.name}
-          className="mt-[64px] mx-auto sm:mx-0"
+          className={`mt-[64px] mx-auto sm:mx-0 ${getImageSizeClasses()}`}
         />
       </div>
       <div className="ml-[21px] mr-[21px] text-center">

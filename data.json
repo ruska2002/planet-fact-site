@@ -33,21 +33,21 @@
         "tabletWidth": "184px",
         "tabletHeight": "184px"
       },
-      "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
-      },
       "internal": {
         "laptopWidth": "139px",
         "laptopHeight": "278px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
         "tabletWidth": "184px",
         "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
       }
     }
   },
