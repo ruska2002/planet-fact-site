@@ -77,6 +77,7 @@ export default function Planet() {
     const view = viewToImageKey[currentText];
     const size = planet.sizes[view];
 
+    if (!size) return "";
     return `
       w-[${size.mobileWidth}] h-[${size.mobileHeight}]
       md:w-[${size.tabletWidth}] md:h-[${size.tabletHeight}]
@@ -86,7 +87,7 @@ export default function Planet() {
 
   return (
     <div>
-      <nav className="flex">
+      <nav className="flex md:hidden lg:hidden ">
         {buttonName.map((view, index) => (
           <button
             className="text-[#ffffff] uppercase"
@@ -107,49 +108,76 @@ export default function Planet() {
         ))}
       </nav>
 
-      <hr className=" opacity-20" />
-      <div className="text-center">
+      <hr className="opacity-20" />
+      <div className="relative text-center">
         <img
           src={planet?.images[viewToImageKey[currentText]]}
           alt={planet?.name}
-          className={`mt-[64px] mx-auto sm:mx-0 ${getImageSizeClasses()}`}
+          className={`lg:absolute mx-auto lg:mx-0 ${getImageSizeClasses()} object-contain mt-[64px] lg:ml-[360px] lg:mt-[120px]`}
         />
       </div>
-      <div className="ml-[21px] mr-[21px] text-center">
-        <p className="text-[#ffffff] font-normal text-[35px] uppercase mt-[50px]">
-          {planet?.name}
-        </p>
-        <p className="text-[#ffffff] text-[11px] font-medium text-center opacity-80">
-          {planet?.[currentText].content}
-        </p>
-        <p className="text-[#ffffff] text-[12px] font-normal ">
-          Source:{" "}
-          <a
-            href={planet?.[currentText].source}
-            target="_blank"
-            rel="noreferrer"
-            className="underline font-bold"
-          >
-            {domain}
-          </a>
-        </p>
+      <div className="ml-[21px] mr-[21px] text-center md:text-left md:ml-8 md:flex md:flex-row md:gap-10 lg:flex-col lg:ml-[1006px]">
+        <div className="flex-1">
+          <p className="text-[#ffffff] font-normal text-[35px] uppercase mt-[50px] lg:text-[70px]">
+            {planet?.name}
+          </p>
+          <p className="text-[#ffffff] text-[11px] font-medium text-center opacity-80 md:text-left md:w-[339px] lg:text-left lg:text-[14px]">
+            {planet?.[currentText].content}
+          </p>
+
+          <p className="text-[#ffffff] text-[12px] font-normal md:mt-3 lg:mt-5">
+            Source:{" "}
+            <a
+              href={planet?.[currentText].source}
+              target="_blank"
+              rel="noreferrer"
+              className="underline font-bold"
+            >
+              {domain}
+            </a>
+          </p>
+        </div>
+
+        <div className="hidden md:flex md:flex-col md:justify-start md:gap-2 md:mt-[68px] md:mr-[120px] lg:mt-[-10px]">
+          {buttonName.map((view, index) => (
+            <div
+              key={index}
+              className={`md:w-[281px] md:h-[40px] flex items-center px-4 lg:w-[350px] lg:h-[48px] ${
+                currentText === view.name ? "" : "border border-white/20"
+              }`}
+              style={
+                currentText === view.name
+                  ? { backgroundColor: planet?.color }
+                  : undefined
+              }
+            >
+              <button
+                className="text-white uppercase text-left w-full"
+                onClick={() => setCurrentText(view.name)}
+              >
+                {view.text}
+              </button>
+            </div>
+          ))}
+        </div>
       </div>
-      <div className="text-[#ffff] uppercase text-center ml-[30px] mr-[30px] mt-8 mb-4">
-        <div className="flex justify-between mb-2 border border-white/20 items-baseline">
-          <p className="ml-[15px] text-[8px] mb-4 mt-4">ROTATION TIME</p>
-          <p className="mr-[15px]">{planet?.rotation}</p>
+
+      <div className="md:text-[22px] md:flex md:justify-between text-[#ffff] uppercase text-center ml-[30px] mr-[30px] mt-8 mb-4 md:gap-4 lg:gap-[40px] lg:ml-[180px] lg:mr-[180px] lg:mt-[50px]">
+        <div className="flex md:flex-col justify-between border border-white/20 p-4 w-full">
+          <p className="text-[8px] mb-4 mt-4 md:text-[10px]">ROTATION TIME</p>
+          <p>{planet?.rotation}</p>
         </div>
-        <div className="flex justify-between mb-2 border border-white/20 items-baseline">
-          <p className="ml-[15px] text-[8px] mb-4 mt-4">REVOLUTION TIME</p>
-          <p className="mr-[15px]">{planet?.revolution}</p>
+        <div className="flex md:flex-col justify-between border border-white/20 p-4 w-full">
+          <p className="text-[8px] mb-4 mt-4 md:text-[10px]">REVOLUTION TIME</p>
+          <p>{planet?.revolution}</p>
         </div>
-        <div className="flex justify-between mb-2 border border-white/20 items-baseline">
-          <p className="ml-[15px] text-[8px] mb-4 mt-4">radius </p>
-          <p className="mr-[15px] text-end">{planet?.radius}</p>
+        <div className="flex md:flex-col justify-between border border-white/20  p-4 w-full">
+          <p className="text-[8px] mb-4 mt-4 md:text-[10px]">radius </p>
+          <p>{planet?.radius}</p>
         </div>
-        <div className="flex justify-between mb-2 border border-white/20 items-baseline">
-          <p className="ml-[15px] text-[8px] mb-4 mt-4">AVERAGE TEMP.</p>
-          <p className="mr-[15px]">{planet?.temperature}</p>
+        <div className="flex md:flex-col justify-between border border-white/20 p-4 w-full">
+          <p className="text-[8px] mb-4 mt-4 md:text-[10px]">AVERAGE TEMP.</p>
+          <p>{planet?.temperature}</p>
         </div>
       </div>
     </div>

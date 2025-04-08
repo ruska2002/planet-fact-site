@@ -110,11 +110,30 @@
     "color": "#6D2ED5",
     "image": "/OvalEarth.png",
     "sizes": {
-      "mobileWidth": "173px",
-      "mobileHeight": "173px",
-      "tabletWidth": "285px",
-      "tabletHeight": "285px",
-      "internal": { "laptopWidth": "218px", "laptopHeight": "436px" }
+      "planet": {
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "internal": {
+        "laptopWidth": "139px",
+        "laptopHeight": "278px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
+      }
     }
   },
   {
@@ -143,13 +162,30 @@
     "color": "#D14C32",
     "image": "/Mars.png",
     "sizes": {
-      "mobileWidth": "129px",
-      "mobileHeight": "129px",
-      "tabletWidth": "213px",
-      "tabletHeight": "213px",
-      "laptopWidth": "336px",
-      "laptopHeight": "336px",
-      "internal": { "laptopWidth": "161px", "laptopHeight": "322px" }
+      "planet": {
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "internal": {
+        "laptopWidth": "139px",
+        "laptopHeight": "278px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
+      }
     }
   },
   {
@@ -178,11 +214,30 @@
     "color": "#D83A34",
     "image": "/Jupiter.png",
     "sizes": {
-      "mobileWidth": "224px",
-      "mobileHeight": "224px",
-      "tabletWidth": "369px",
-      "tabletHeight": "369px",
-      "internal": { "laptopWidth": "286px", "laptopHeight": "572px" }
+      "planet": {
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "internal": {
+        "laptopWidth": "139px",
+        "laptopHeight": "278px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
+      }
     }
   },
   {
@@ -211,11 +266,30 @@
     "color": "#CD5120",
     "image": "/Saturn.png",
     "sizes": {
-      "mobileWidth": "256px",
-      "mobileHeight": "256px",
-      "tabletWidth": "422px",
-      "tabletHeight": "422px",
-      "internal": { "laptopWidth": "202px", "laptopHeight": "404px" }
+      "planet": {
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "internal": {
+        "laptopWidth": "139px",
+        "laptopHeight": "278px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
+      }
     }
   },
   {
@@ -244,11 +318,30 @@
     "color": "#1EC1A2",
     "image": "/Urans.png",
     "sizes": {
-      "mobileWidth": "176px",
-      "mobileHeight": "176px",
-      "tabletWidth": "290px",
-      "tabletHeight": "290px",
-      "internal": { "laptopWidth": "221px", "laptopHeight": "442px" }
+      "planet": {
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "internal": {
+        "laptopWidth": "139px",
+        "laptopHeight": "278px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
+      }
     }
   },
   {
@@ -277,12 +370,30 @@
     "color": "#2D68F0",
     "image": "/Neptune.png",
     "sizes": {
-      "mobileWidth": "173px",
-      "mobileHeight": "173px",
-      "tabletWidth": "285px",
-      "tabletHeight": "285px",
-
-      "internal": { "laptopWidth": "218px", "laptopHeight": "436px" }
+      "planet": {
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "internal": {
+        "laptopWidth": "139px",
+        "laptopHeight": "278px",
+        "mobileWidth": "55px",
+        "mobileHeight": "109px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
+      },
+      "geology": {
+        "laptopWidth": "163px",
+        "laptopHeight": "199px",
+        "mobileWidth": "30px",
+        "mobileHeight": "50px",
+        "tabletWidth": "88px",
+        "tabletHeight": "182px"
+      }
     }
   }
 ]
