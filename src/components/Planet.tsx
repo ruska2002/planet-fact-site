@@ -65,25 +65,6 @@ export default function Planet() {
 
   const domain = getDomain(planet?.[currentText]?.source);
 
-  const getImageSize = (view: "planet" | "internal" | "geology") => {
-    const sizes = planet?.sizes[view];
-    if (!sizes) return { width: "173px", height: "173px" };
-
-    const windowWidth = window.innerWidth;
-
-    if (windowWidth <= 640) {
-      // Mobile size
-      return { width: sizes.mobileWidth, height: sizes.mobileHeight };
-    } else if (windowWidth <= 1024) {
-      // Tablet size
-      return { width: sizes.tabletWidth, height: sizes.tabletHeight };
-    } else {
-      // Laptop size
-      return { width: sizes.laptopWidth, height: sizes.laptopHeight };
-    }
-  };
-  const { width, height } = getImageSize(viewToImageKey[currentText]);
-
   return (
     <div>
       <nav className="flex">
@@ -112,7 +93,6 @@ export default function Planet() {
         <img
           src={planet?.images[viewToImageKey[currentText]]}
           alt={planet?.name}
-          style={{ width, height }}
           className="mt-[64px] mx-auto sm:mx-0"
         />
       </div>
