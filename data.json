@@ -20,8 +20,10 @@
     "images": {
       "planet": "/planet-mercury.svg",
       "internal": "/planet-mercury-internal.svg",
-      "geology": "/geology-mercury.png"
+      "geology": "/planet-mercury.svg"
     },
+    "miniPic": "/geology-mercury.png",
+
     "color": "#419EBB",
     "image": "/OvalMerc.png",
     "sizes": {
@@ -34,20 +36,20 @@
         "tabletHeight": "184px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
         "mobileWidth": "55px",
         "mobileHeight": "109px",
         "tabletWidth": "184px",
         "tabletHeight": "184px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "290px",
+        "laptopHeight": "290px",
+        "mobileWidth": "111px",
+        "mobileHeight": "111px",
+        "tabletWidth": "184px",
+        "tabletHeight": "184px"
       }
     }
   },
@@ -72,17 +74,37 @@
     "images": {
       "planet": "/planet-venus.svg",
       "internal": "/planet-venus-internal.svg",
-      "geology": "./geology-venus.png"
+      "geology": "/planet-venus.svg"
     },
     "sizes": {
-      "mobileWidth": "154px",
-      "mobileHeight": "154px",
-      "tabletWidth": "253px",
-      "tabletHeight": "253px",
-      "internal": { "laptopWidth": "193px", "laptopHeight": "386px" }
+      "planet": {
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "154px",
+        "mobileHeight": "154px",
+        "tabletWidth": "253px",
+        "tabletHeight": "253px"
+      },
+      "internal": {
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "154px",
+        "mobileHeight": "154px",
+        "tabletWidth": "253px",
+        "tabletHeight": "253px"
+      },
+      "geology": {
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "154px",
+        "mobileHeight": "154px",
+        "tabletWidth": "253px",
+        "tabletHeight": "253px"
+      }
     },
     "color": "#EDA249",
-    "image": "/OvalVenus.png"
+    "image": "/OvalVenus.png",
+    "miniPic": "./geology-venus.png"
   },
   {
     "name": "Earth",
@@ -105,36 +127,37 @@
     "images": {
       "planet": "/planet-earth.svg",
       "internal": "/planet-earth-internal.svg",
-      "geology": "/geology-earth.png"
+      "geology": "/planet-earth.svg"
     },
     "color": "#6D2ED5",
     "image": "/OvalEarth.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "350px",
+        "laptopHeight": "350px",
+        "mobileWidth": "173px",
+        "mobileHeight": "173px",
+        "tabletWidth": "285px",
+        "tabletHeight": "285px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
-        "mobileWidth": "55px",
-        "mobileHeight": "109px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "350px",
+        "laptopHeight": "350px",
+        "mobileWidth": "173px",
+        "mobileHeight": "173px",
+        "tabletWidth": "285px",
+        "tabletHeight": "285px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "350px",
+        "laptopHeight": "350px",
+        "mobileWidth": "173px",
+        "mobileHeight": "173px",
+        "tabletWidth": "285px",
+        "tabletHeight": "285px"
       }
-    }
+    },
+    "miniPic": "/geology-earth.png"
   },
   {
     "name": "Mars",
@@ -157,36 +180,37 @@
     "images": {
       "planet": "/planet-mars.svg",
       "internal": "/planet-mars-internal.svg",
-      "geology": "/geology-mars.png"
+      "geology": "/planet-mars.svg"
     },
     "color": "#D14C32",
     "image": "/Mars.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "336px",
+        "laptopHeight": "336px",
+        "mobileWidth": "129px",
+        "mobileHeight": "129px",
+        "tabletWidth": "213px",
+        "tabletHeight": "213px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
-        "mobileWidth": "55px",
-        "mobileHeight": "109px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "336px",
+        "laptopHeight": "336px",
+        "mobileWidth": "129px",
+        "mobileHeight": "129px",
+        "tabletWidth": "213px",
+        "tabletHeight": "213px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "336px",
+        "laptopHeight": "336px",
+        "mobileWidth": "129px",
+        "mobileHeight": "129px",
+        "tabletWidth": "213px",
+        "tabletHeight": "213px"
       }
-    }
+    },
+    "miniPic": "/geology-mars.png"
   },
   {
     "name": "Jupiter",
@@ -209,36 +233,37 @@
     "images": {
       "planet": "/planet-jupiter.svg",
       "internal": "/planet-jupiter-internal.svg",
-      "geology": "/geology-jupiter.png"
+      "geology": "/planet-jupiter.svg"
     },
     "color": "#D83A34",
     "image": "/Jupiter.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "402px",
+        "laptopHeight": "402px",
+        "mobileWidth": "224px",
+        "mobileHeight": "224px",
+        "tabletWidth": "369px",
+        "tabletHeight": "369px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
-        "mobileWidth": "55px",
-        "mobileHeight": "109px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "402px",
+        "laptopHeight": "402px",
+        "mobileWidth": "224px",
+        "mobileHeight": "224px",
+        "tabletWidth": "369px",
+        "tabletHeight": "369px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "402px",
+        "laptopHeight": "402px",
+        "mobileWidth": "224px",
+        "mobileHeight": "224px",
+        "tabletWidth": "369px",
+        "tabletHeight": "369px"
       }
-    }
+    },
+    "miniPic": "/geology-jupiter.png"
   },
   {
     "name": "Saturn",
@@ -261,36 +286,37 @@
     "images": {
       "planet": "/planet-saturn.svg",
       "internal": "/planet-saturn-internal.svg",
-      "geology": "/geology-saturn.png"
+      "geology": "/planet-saturn.svg"
     },
     "color": "#CD5120",
     "image": "/Saturn.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "466px",
+        "laptopHeight": "466px",
+        "mobileWidth": "256px",
+        "mobileHeight": "256px",
+        "tabletWidth": "422px",
+        "tabletHeight": "422px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
-        "mobileWidth": "55px",
-        "mobileHeight": "109px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "466px",
+        "laptopHeight": "466px",
+        "mobileWidth": "256px",
+        "mobileHeight": "256px",
+        "tabletWidth": "422px",
+        "tabletHeight": "422px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "466px",
+        "laptopHeight": "466px",
+        "mobileWidth": "256px",
+        "mobileHeight": "256px",
+        "tabletWidth": "422px",
+        "tabletHeight": "422px"
       }
-    }
+    },
+    "miniPic": "/geology-saturn.png"
   },
   {
     "name": "Uranus",
@@ -313,36 +339,37 @@
     "images": {
       "planet": "/planet-uranus.svg",
       "internal": "/planet-uranus-internal.svg",
-      "geology": "/geology-uranus.png"
+      "geology": "/planet-uranus.svg"
     },
     "color": "#1EC1A2",
     "image": "/Urans.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "176px",
+        "mobileHeight": "176px",
+        "tabletWidth": "290px",
+        "tabletHeight": "290px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
-        "mobileWidth": "55px",
-        "mobileHeight": "109px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "176px",
+        "mobileHeight": "176px",
+        "tabletWidth": "290px",
+        "tabletHeight": "290px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "176px",
+        "mobileHeight": "176px",
+        "tabletWidth": "290px",
+        "tabletHeight": "290px"
       }
-    }
+    },
+    "miniPic": "/geology-uranus.png"
   },
   {
     "name": "Neptune",
@@ -365,35 +392,36 @@
     "images": {
       "planet": "/planet-neptune.svg",
       "internal": "/planet-neptune-internal.svg",
-      "geology": "/geology-neptune.png"
+      "geology": "/planet-neptune.svg"
     },
     "color": "#2D68F0",
     "image": "/Neptune.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
-        "mobileWidth": "111px",
-        "mobileHeight": "111px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "173px",
+        "mobileHeight": "173px",
+        "tabletWidth": "285px",
+        "tabletHeight": "285px"
       },
       "internal": {
-        "laptopWidth": "139px",
-        "laptopHeight": "278px",
-        "mobileWidth": "55px",
-        "mobileHeight": "109px",
-        "tabletWidth": "184px",
-        "tabletHeight": "184px"
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "173px",
+        "mobileHeight": "173px",
+        "tabletWidth": "285px",
+        "tabletHeight": "285px"
       },
       "geology": {
-        "laptopWidth": "163px",
-        "laptopHeight": "199px",
-        "mobileWidth": "30px",
-        "mobileHeight": "50px",
-        "tabletWidth": "88px",
-        "tabletHeight": "182px"
+        "laptopWidth": "400px",
+        "laptopHeight": "400px",
+        "mobileWidth": "173px",
+        "mobileHeight": "173px",
+        "tabletWidth": "285px",
+        "tabletHeight": "285px"
       }
-    }
+    },
+    "miniPic": "/geology-neptune.png"
   }
 ]

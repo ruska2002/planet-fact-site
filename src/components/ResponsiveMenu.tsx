@@ -32,7 +32,7 @@ export default function ResponsiveMenu({ isOpen }: ResponsiveMenuProps) {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           exit={{ opacity: 0 }}
-          className="absolute top-12 left-0 w-full h-[585px] bg-[#070724]"
+          className="absolute top-[63px] left-0 w-full h-[585px] bg-[#070724]"
         >
           <div className="text-xl font-semibold uppercase text-white py-10 ">
             <ul className="flex flex-col space-y-4">
