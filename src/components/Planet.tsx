@@ -138,7 +138,7 @@ export default function Planet() {
       <hr className="opacity-20" />
 
       <div className="lg:max-w-[1440px] mx-auto">
-        <div className="lg:flex lg:justify-center lg:flex-row lg:items-center lg:min-h-[60vh]  px-4  md:flex md:flex-col md:justify-center ">
+        <div className="lg:flex lg:justify-center lg:flex-row lg:items-center lg:min-h-[60vh] px-4 md:flex md:flex-col md:justify-center ">
           <div className="flex justify-center items-center lg:w-1/2 relative mt-5">
             <img
               src={planet?.images[viewToImageKey[currentText]]}
@@ -155,7 +155,7 @@ export default function Planet() {
             )}
           </div>
 
-          <div className="lg:w-1/2 px-6 lg:px-12 lg:flex lg:flex-col md:flex md:justify-center md:items-center md:gap-16">
+          <div className="lg:w-1/2 px-6 lg:px-12 lg:flex lg:flex-col md:flex md:justify-center md:items-center lg:gap-6 md:gap-16">
             <div>
               <p className="text-[#ffffff] font-normal text-[35px] uppercase mt-[50px] lg:text-[70px] text-center">
                 {planet?.name}
@@ -175,7 +175,7 @@ export default function Planet() {
             </div>
 
             {(matchesTablet || matchesLaptop) && (
-              <div className="mt-6 md:flex md:flex-col md:gap-2 md:mt-14">
+              <div className="mt-6 md:flex md:flex-col md:gap-2 md:mt-14 lg:mt-0">
                 {buttonName.map((view, index) => (
                   <div
                     key={index}
