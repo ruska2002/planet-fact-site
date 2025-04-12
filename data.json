@@ -28,24 +28,24 @@
     "image": "/OvalMerc.png",
     "sizes": {
       "planet": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
+        "laptopWidth": "350px",
+        "laptopHeight": "350px",
         "mobileWidth": "111px",
         "mobileHeight": "111px",
         "tabletWidth": "184px",
         "tabletHeight": "184px"
       },
       "internal": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
+        "laptopWidth": "350px",
+        "laptopHeight": "350px",
         "mobileWidth": "55px",
         "mobileHeight": "109px",
         "tabletWidth": "184px",
         "tabletHeight": "184px"
       },
       "geology": {
-        "laptopWidth": "290px",
-        "laptopHeight": "290px",
+        "laptopWidth": "350px",
+        "laptopHeight": "350px",
         "mobileWidth": "111px",
         "mobileHeight": "111px",
         "tabletWidth": "184px",

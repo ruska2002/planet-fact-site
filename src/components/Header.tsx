@@ -17,7 +17,7 @@ export default function Header() {
   const planetData = data.find((planet) => planet.name === planetName);
 
   return (
-    <div className="w-full px-6 py-4 flex flex-col lg:flex-row lg:items-center lg:justify-between">
+    <div className="w-full px-6 py-4 flex md:gap-4 flex-col md:items-center lg:flex-row lg:items-center lg:justify-between">
       <h1 className="text-center lg:text-left text-[#ffffff] text-[28px] tracking-tighter font-normal">
         THE PLANETS
       </h1>

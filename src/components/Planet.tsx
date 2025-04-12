@@ -101,9 +101,9 @@ export default function Planet() {
     if (matchesLaptop) {
       return { miniWidth: "180px", miniHeight: "180px" };
     } else if (matchesTablet) {
-      return { miniWidth: "100px", miniHeight: "100px" };
+      return { miniWidth: "120px", miniHeight: "120px" };
     } else {
-      return { miniWidth: "60px", miniHeight: "60px" };
+      return { miniWidth: "80px", miniHeight: "80px" };
     }
   };
 
@@ -155,7 +155,7 @@ export default function Planet() {
             )}
           </div>
 
-          <div className="lg:w-1/2 px-6 lg:px-12 lg:flex lg:flex-col md:flex md:justify-center md:items-center">
+          <div className="lg:w-1/2 px-6 lg:px-12 lg:flex lg:flex-col md:flex md:justify-center md:items-center md:gap-16">
             <div>
               <p className="text-[#ffffff] font-normal text-[35px] uppercase mt-[50px] lg:text-[70px] text-center">
                 {planet?.name}
@@ -201,7 +201,7 @@ export default function Planet() {
           </div>
         </div>
 
-        <div className="flex flex-col gap-3 md:text-[22px] md:flex md:flex-row md:justify-between text-[#ffff] uppercase text-center ml-[30px] mr-[30px] mt-8 mb-4 md:gap-4 lg:gap-[40px] lg:ml-[180px] lg:mr-[180px]">
+        <div className="flex flex-col gap-3 md:text-[22px] md:flex md:flex-row md:justify-between text-[#ffff] text-center uppercase ml-[30px] mr-[30px] mt-8 mb-4 md:gap-4 lg:gap-[40px] lg:text-center">
           <div className="flex md:flex-col justify-between border border-white/20 p-4 w-full">
             <p className="text-[8px] mb-4 mt-4 md:text-[10px]">ROTATION TIME</p>
             <p>{planet?.rotation}</p>
