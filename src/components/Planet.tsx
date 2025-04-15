@@ -1,41 +1,13 @@
 import { useParams } from "react-router-dom";
 import data from "../../data.json";
 import { useState } from "react";
-import { useMediaQuery } from "react-responsive";
+import { useMediaQuery } from "usehooks-ts";
 
 const buttonName = [
   { name: "overview", text: "OVERVIEW", mobileText: "OVERVIEW" },
   { name: "structure", text: "Internal Structure", mobileText: "STRUCTURE" },
   { name: "geology", text: "Surface Geology", mobileText: "SURFACE" },
 ] as const;
-
-interface Size {
-  mobileWidth: string;
-  mobileHeight: string;
-  tabletWidth: string;
-  tabletHeight: string;
-  laptopWidth: string;
-  laptopHeight: string;
-}
-
-interface Planet {
-  name: string;
-  overview: { content: string; source: string };
-  structure: { content: string; source: string };
-  geology: { content: string; source: string };
-  images: { planet: string; internal: string; geology: string };
-  color: string;
-  rotation: string;
-  revolution: string;
-  radius: string;
-  temperature: string;
-  sizes: {
-    planet: Size;
-    internal: Size;
-    geology: Size;
-  };
-  miniPic: string;
-}
 
 const viewToImageKey = {
   overview: "planet",
@@ -44,8 +16,10 @@ const viewToImageKey = {
 } as const;
 
 export default function Planet() {
-  const matchesTablet = useMediaQuery({ minWidth: 768, maxWidth: 1023 });
-  const matchesLaptop = useMediaQuery({ minWidth: 1024 });
+  const matchesTablet = useMediaQuery(
+    "(min-width: 768px) and (max-width: 1023px)"
+  );
+  const matchesLaptop = useMediaQuery("(min-width: 1024px)");
 
   const [currentText, setCurrentText] = useState<
     "overview" | "structure" | "geology"
@@ -55,27 +29,6 @@ export default function Planet() {
   const planet = data.find((planet) => planet.name === planetName) as
     | Planet
     | undefined;
-
-  const PlanetImage = planet;
-
-  const getDomain = (url: string) => {
-    try {
-      const parsedUrl = new URL(url);
-      let hostName = parsedUrl.hostname;
-
-      //hostname aris properti romelic abrunebs aqedan https://en.wikipedia.org/wiki/Mercury_(planet) amas en.wikipedia.org
-
-      // ვშლი www , en, ან მსგვას ტექსტს დასაწყისიდან
-      hostName = hostName.replace(/^(www\.|en\.)/, "");
-      // აქ ვშლი ბოლოდან .ორგ-ს
-      hostName = hostName.replace(/\.org$/, "");
-
-      return hostName;
-    } catch (error) {
-      console.error("Invalid URL", error);
-      return "Invalid URL";
-    }
-  };
 
   const getCurrentSize = () => {
     // ამ ფუნქციით ვიგებ რომელ ფოტოზე დგას, რომ იმისი ზომები გამოვიყენო ჯეისონიდან
@@ -87,13 +40,18 @@ export default function Planet() {
 
     if (!size) return { width: "0px", height: "0px" };
 
-    if (matchesTablet) {
-      return { width: size.tabletWidth, height: size.tabletHeight };
-    } else if (matchesLaptop) {
-      return { width: size.laptopWidth, height: size.laptopHeight };
-    } else {
-      return { width: size.mobileWidth, height: size.mobileHeight };
-    }
+    return {
+      width: matchesTablet
+        ? size.tabletWidth
+        : matchesLaptop
+        ? size.laptopWidth
+        : size.mobileWidth,
+      height: matchesTablet
+        ? size.tabletHeight
+        : matchesLaptop
+        ? size.laptopHeight
+        : size.mobileHeight,
+    };
   };
 
   const miniPic = (): { miniWidth: string; miniHeight: string } => {
@@ -110,11 +68,9 @@ export default function Planet() {
   const { width, height } = getCurrentSize();
   const { miniWidth, miniHeight } = miniPic();
 
-  const domain = getDomain(planet?.[currentText]?.source);
-
   return (
     <div>
-      <nav className="flex md:hidden lg:hidden ">
+      <nav className="flex md:hidden lg:hidden justify-center items-center ">
         {buttonName.map((view, index) => (
           <button
             className="text-[#ffffff] uppercase"
@@ -134,7 +90,6 @@ export default function Planet() {
           </button>
         ))}
       </nav>
-
       <hr className="opacity-20" />
 
       <div className="lg:max-w-[1440px] mx-auto">
@@ -149,7 +104,7 @@ export default function Planet() {
             {currentText === "geology" && (
               <img
                 src={planet?.miniPic}
-                className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 object-contain pointer-events-none lg:mt-36  lg:ml-12 mt-10 ml-8"
+                className="absolute bottom-[-40px] left-1/2 -translate-x-1/2 object-contain pointer-events-none"
                 style={{ width: miniWidth, height: miniHeight }}
               />
             )}
@@ -169,7 +124,7 @@ export default function Planet() {
                   href={planet?.[currentText].source}
                   className="underline font-bold"
                 >
-                  {domain}
+                  Wikipedia
                 </a>
               </p>
             </div>

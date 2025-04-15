@@ -17,7 +17,8 @@
     "react-dom": "^19.0.0",
     "react-responsive": "^10.0.1",
     "react-router": "^7.4.1",
-    "react-router-dom": "^7.4.1"
+    "react-router-dom": "^7.4.1",
+    "usehooks-ts": "^3.1.1"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",
